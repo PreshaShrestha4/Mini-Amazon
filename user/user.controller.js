@@ -98,7 +98,7 @@ router.post("/user/login", async (req, res) => {
 
   // encrypt cipher text
   const token = jwt.sign(payLoad, secretKey, {
-    expiresIn: "/7d",
+    expiresIn: "7d",
   });
 
   //return res.status(201).send({ message: "Success" , userDetails:user});
